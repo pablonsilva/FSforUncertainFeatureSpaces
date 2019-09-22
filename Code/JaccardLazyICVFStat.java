@@ -18,7 +18,6 @@ public class JaccardLazyICVFStat extends AbstractClassifier {
     public void buildClassifier(Instances data) throws Exception {
 
         double[] threshold = {.150,0.400,0.700,0.900};
-        //double[] threshold = {.0, .100,0.200,0.300,0.400,0.500,0.600,0.700,0.800,0.900};
         double best = 0;
         best_th = 0;
 
@@ -59,7 +58,6 @@ public class JaccardLazyICVFStat extends AbstractClassifier {
     public double getBestThreshold()
     {
         double[] threshold = {.150,0.400,0.700,0.900};
-        //double[] threshold = {.0, .100,0.200,0.300,0.400,0.500,0.600,0.700,0.800,0.900};
         return threshold[best_th];
     }
 
