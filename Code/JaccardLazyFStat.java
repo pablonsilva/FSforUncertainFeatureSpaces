@@ -47,8 +47,6 @@ public class JaccardLazyFStat extends AbstractClassifier {
 
     @Override
     public void buildClassifier(Instances instances) throws Exception {
-        //_cls = new Jacca();
-        //_cls.buildClassifier(instances);
         _instances = new Instances(instances);
         eval = new FStatisticAttributeEval();
         eval.buildEvaluator(instances);
